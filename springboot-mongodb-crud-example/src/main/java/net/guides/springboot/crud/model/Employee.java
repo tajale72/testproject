@@ -33,21 +33,21 @@ public class Employee {
     @Size(max=100)
     @Indexed(unique=true)
 	private String emailId;
-	
-	@NotBlank
-    @Size(max=100)
-    @Indexed(unique=true)
-	private String phoneNo;
+//	
+//	@NotBlank
+//    @Size(max=100)
+//    @Indexed(unique=true)
+//	private String phoneNo;
 	
 	public Employee() {
 		
 	}
 	
-	public Employee(String firstName, String lastName, String emailId, String phoneNo) {
+	public Employee(String firstName, String lastName, String emailId) {
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.emailId = emailId;
-		this.phoneNo = phoneNo;
+//		this.phoneNo = phoneNo;
 	}
 	
 	public long getId() {
@@ -77,19 +77,19 @@ public class Employee {
 	public void setEmailId(String emailId) {
 		this.emailId = emailId;
 	}
-	
-	public String getPhoneNo() {
-		return phoneNo;
-	}
-	public void setPhoneNo(String phoneNo) {
-		this.phoneNo = phoneNo;
-	}
+//	
+//	public String getPhoneNo() {
+//		return phoneNo;
+//	}
+//	public void setPhoneNo(String phoneNo) {
+//		this.phoneNo = phoneNo;
+//	}
 	
 
 	@Override
 	public String toString() {
 		return "Employee [id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + 
 				", emailId=" + emailId
-				+ ", phoneNo=" + phoneNo + "]";
+				+ "]";
 	}	
 }
