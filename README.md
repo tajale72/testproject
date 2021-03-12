@@ -1,11 +1,12 @@
-# This is a practice repository
+###  This is a practice repository
 
-# Dependencies
-# Have to have Go install and git 
+### Dependencies
 
-# git clone https://github.com/tajale72/testproject.git
+## Go and git and postgres 
 
-# Install postgres database
+### git clone https://github.com/tajale72/testproject.git
+
+### Install postgres
 
 
 
