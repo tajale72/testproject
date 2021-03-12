@@ -1,5 +1,11 @@
-# springboot-angular-mongodb-crud-tutorial
+# Branch Hisi
 
-https://www.javaguides.net/2019/12/spring-boot-angular-mongodb-crud-example-tutorial.html
+# This is for java backend.
 
-https://www.javaguides.net/2019/12/spring-boot-mongodb-crud-example-tutorial.html
+# you need to install java, for mac you can install homebrew to install all of the softwares.
+
+# brew install java
+
+# brew install jdk
+
+# Create a springboot project using springboot.io
