@@ -1,5 +1,11 @@
-# springboot-angular-mongodb-crud-tutorial
+# This is a practice repository
 
-https://www.javaguides.net/2019/12/spring-boot-angular-mongodb-crud-example-tutorial.html
+# Dependencies
+# Have to have Go install and git 
 
-https://www.javaguides.net/2019/12/spring-boot-mongodb-crud-example-tutorial.html
+# git clone https://github.com/tajale72/testproject.git
+
+# Install postgres database
+
+
+
