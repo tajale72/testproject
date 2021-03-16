@@ -25,6 +25,7 @@ func main() {
 	r := gin.Default()
 
 	//GET method for swagger endpoint.
+
 	r.GET("/swagger", swaggerAPI)
 
 	//This will run in port : 8080
