@@ -21,6 +21,7 @@ func swaggerAPI(c *gin.Context) {
 }
 
 func main() {
+	fmt.println("hello")
 	//Creating a gin router
 	r := gin.Default()
 
