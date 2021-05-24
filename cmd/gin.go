@@ -10,15 +10,15 @@ func main() {
 
 	r.GET("/hello", Hello)
 	r.POST("/hello", Hey)
-	r.PATCH("/hello", Hi)
+	//Patch deleted
 	r.Run()
 
 }
 
-//Hi is a function
-func Hi(c *gin.Context) {
-	c.JSONP(200, "hi")
-}
+// //Hi is a function
+// /func Hi(c *gin.Context) {
+// 	c.JSONP(200, "hi")
+// }
 
 //Hello is a function
 func Hello(c *gin.Context) {
