@@ -9,4 +9,7 @@
 ### Install postgres
 
 
+## When you run angular if you get devkit-errors
+-npm install --save-dev @angular-devkit/build-angular
+
 
