@@ -6,6 +6,7 @@ import (
 	"net/http"
 	"os"
 
+	"github.com/gin-gonic/gin"
 	"github.com/joho/godotenv"
 	"golang.org/x/oauth2"
 	"golang.org/x/oauth2/google"
@@ -28,8 +29,8 @@ func init() {
 	}
 }
 
-func Signin(w http.ResponseWriter, r *http.Request) {
+func Signin(c *gin.Context) {
 	url := ssogolang.AuthCodeURL(RandomString)
 	fmt.Println(url)
-	http.Redirect(w, r, url, http.StatusTemporaryRedirect)
+	c.Redirect(http.StatusTemporaryRedirect, url)
 }

@@ -2,21 +2,25 @@ package controllers
 
 import (
 	"context"
+	"encoding/json"
 	"errors"
-	"fmt"
 	"io/ioutil"
 	"log"
 	"net/http"
+
+	"github.com/gin-gonic/gin"
 )
 
-func Callback(w http.ResponseWriter, r *http.Request) {
-	state := r.FormValue("state")
-	code := r.FormValue("code")
+func Callback(c *gin.Context) {
+	var res interface{}
+	state := c.Request.FormValue("state")
+	code := c.Request.FormValue("code")
 	data, err := getUserData(state, code)
+	json.Unmarshal(data, &res)
 	if err != nil {
 		log.Fatal("error getting user data")
 	}
-	fmt.Fprintf(w, "Data : %s", data)
+	c.JSON(http.StatusAccepted, res)
 }
 func getUserData(state, code string) ([]byte, error) {
 	if state != RandomString {
