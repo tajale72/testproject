@@ -3,10 +3,9 @@
 ### Dependencies -
     React JS
     GO
- ### You can install softwares using homebrew
 
  ### To Install homebrew -
-   Run: /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    Run: /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
  ### To Install React -
     Run: brew install react
