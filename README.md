@@ -1,14 +1,30 @@
-###  This is a practice repository
+###  FullStack Application
 
 ### Dependencies -
     React JS
     GO
-### git clone https://github.com/tajale72/testproject.git
+ ### You can install softwares using homebrew
 
-### Install postgres
+ ### To Install homebrew -
+   Run: /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
+ ### To Install React -
+    Run: brew install react
 
-## When you run angular if you get devkit-errors
-## npm install --save-dev @angular-devkit/build-angular
+ ### To Install React -
+    Run: brew install go
+
+### TO create the GOPATH-
+    Go to the root directory :Run cd ~/
+    Run: Open .bash_profile
+ 
+ ### ADD this in your bash_profile file
+    export GOPATH=$HOME/go
+    export GOROOT=/usr/local/go
+    export PATH=$PATH:$GOPATH/bin
+    export PATH=$PATH:$GOROOT/bin
+
+### Source the updated environment variables
+    Run: Source ./bash_profile
 
 
